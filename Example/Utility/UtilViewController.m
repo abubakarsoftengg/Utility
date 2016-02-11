@@ -7,7 +7,7 @@
 //
 
 #import "UtilViewController.h"
-#import "DeviceInfo.h"
+#import "UtilDeviceInfo.h"
 
 @interface UtilViewController ()
 
