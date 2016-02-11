@@ -7,6 +7,7 @@
 //
 
 #import "UtilViewController.h"
+#import "DeviceInfo.h"
 
 @interface UtilViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    BOOL isiPad = [DeviceInfo isiPad];
 }
 
 - (void)didReceiveMemoryWarning

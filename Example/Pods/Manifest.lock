@@ -1,0 +1,14 @@
+PODS:
+  - Utility (0.1.0)
+
+DEPENDENCIES:
+  - Utility (from `../`)
+
+EXTERNAL SOURCES:
+  Utility:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Utility: 8ad4240b08459224f150f74ab67f7ffa1ca19ed5
+
+COCOAPODS: 0.39.0
