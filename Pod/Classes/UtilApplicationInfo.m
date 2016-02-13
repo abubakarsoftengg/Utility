@@ -10,6 +10,7 @@
 
 @implementation UtilApplicationInfo
 
+
 +(NSString *)bundlePath:(NSString *)fileName
 {
     return [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:fileName];
