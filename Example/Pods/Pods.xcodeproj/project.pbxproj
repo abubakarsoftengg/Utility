@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		093C3229ED4629E6D4A277FD7F421A28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		4180294B1C7799B2007AE0FE /* CommonHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 418029491C7799B2007AE0FE /* CommonHelper.h */; };
+		4180294C1C7799B2007AE0FE /* CommonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4180294A1C7799B2007AE0FE /* CommonHelper.m */; };
+		41A7B4F81C6EEBA0003894BA /* UtilApplicationInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A7B4F61C6EEBA0003894BA /* UtilApplicationInfo.h */; };
+		41A7B4F91C6EEBA0003894BA /* UtilApplicationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A7B4F71C6EEBA0003894BA /* UtilApplicationInfo.m */; };
 		41B1A6991C6D14780097D59F /* UtilDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 41B1A6971C6D14780097D59F /* UtilDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41B1A69A1C6D14780097D59F /* UtilDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B1A6981C6D14780097D59F /* UtilDeviceInfo.m */; };
 		496A0703F3A3AABB7F3C80E997AC4DFB /* Pods-Utility_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 215DA49EDEE1A4D54AA506C83B9BD913 /* Pods-Utility_Tests-dummy.m */; };
@@ -25,6 +29,10 @@
 		3931DA6531F77A9A7BE890A0E8EC63A9 /* Pods-Utility_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Utility_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3E69955708DBAFA243604EECE86AFD67 /* Pods-Utility_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Utility_Tests.modulemap"; sourceTree = "<group>"; };
+		418029491C7799B2007AE0FE /* CommonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonHelper.h; path = Pod/Classes/CommonHelper.h; sourceTree = "<group>"; };
+		4180294A1C7799B2007AE0FE /* CommonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonHelper.m; path = Pod/Classes/CommonHelper.m; sourceTree = "<group>"; };
+		41A7B4F61C6EEBA0003894BA /* UtilApplicationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtilApplicationInfo.h; path = Pod/Classes/UtilApplicationInfo.h; sourceTree = "<group>"; };
+		41A7B4F71C6EEBA0003894BA /* UtilApplicationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UtilApplicationInfo.m; path = Pod/Classes/UtilApplicationInfo.m; sourceTree = "<group>"; };
 		41B1A6971C6D14780097D59F /* UtilDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UtilDeviceInfo.h; path = Pod/Classes/UtilDeviceInfo.h; sourceTree = "<group>"; };
 		41B1A6981C6D14780097D59F /* UtilDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UtilDeviceInfo.m; path = Pod/Classes/UtilDeviceInfo.m; sourceTree = "<group>"; };
 		52D25D38A09D260DDFCAB406A42BCA12 /* Pods-Utility_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Utility_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +114,10 @@
 			children = (
 				41B1A6971C6D14780097D59F /* UtilDeviceInfo.h */,
 				41B1A6981C6D14780097D59F /* UtilDeviceInfo.m */,
+				41A7B4F61C6EEBA0003894BA /* UtilApplicationInfo.h */,
+				41A7B4F71C6EEBA0003894BA /* UtilApplicationInfo.m */,
+				418029491C7799B2007AE0FE /* CommonHelper.h */,
+				4180294A1C7799B2007AE0FE /* CommonHelper.m */,
 			);
 			name = Utility;
 			path = ../..;
@@ -181,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1214B988188C59BC2FDD5FFA731BF4B /* Pods-Utility_Example-umbrella.h in Headers */,
+				4180294B1C7799B2007AE0FE /* CommonHelper.h in Headers */,
+				41A7B4F81C6EEBA0003894BA /* UtilApplicationInfo.h in Headers */,
 				41B1A6991C6D14780097D59F /* UtilDeviceInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41B1A69A1C6D14780097D59F /* UtilDeviceInfo.m in Sources */,
+				41A7B4F91C6EEBA0003894BA /* UtilApplicationInfo.m in Sources */,
+				4180294C1C7799B2007AE0FE /* CommonHelper.m in Sources */,
 				818ACCDA3B37F7CC878B619170B9A2C5 /* Pods-Utility_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
