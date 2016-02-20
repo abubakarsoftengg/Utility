@@ -14,4 +14,14 @@
 
 +(NSString *)applicationDocumentsPath:(NSString *)fileName;
 
++(NSString *)applicationDocumentDirectory;
+
++(NSString *)applicationLibraryDirectory;
+
++ (NSString *) appVersion;
+
++ (NSString *) build;
+
++ (NSString *) versionBuild;
+
 @end
