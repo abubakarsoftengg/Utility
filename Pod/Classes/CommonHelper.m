@@ -27,4 +27,27 @@
     return topController;
 }
 
+#pragma mark - Remove Directory From iCLoud Backup
++ (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL
+{
+    
+    NSError *error = nil;
+    BOOL success = [URL setResourceValue: [NSNumber numberWithBool: YES]
+                                  forKey: NSURLIsExcludedFromBackupKey error: &error];
+    if(!success){
+        NSLog(@"Error excluding %@ from backup %@", [URL lastPathComponent], error);
+    }
+    return success;
+}
+
++ (void)removeFileFromBackup:(NSString*)directory
+{
+    NSURL *urlFromPath = [[NSURL alloc] initFileURLWithPath:directory];
+    
+    if ([self addSkipBackupAttributeToItemAtURL:urlFromPath])
+    {
+        NSLog(@"Successfully Removed");
+    }
+}
+
 @end

@@ -15,4 +15,6 @@
 
 + (UIViewController*) topMostController ;
 
++ (void)removeFileFromBackup:(NSString*)directory;
+
 @end
