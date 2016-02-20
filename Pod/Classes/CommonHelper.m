@@ -17,7 +17,7 @@
     }
 }
 
-- (UIViewController*) topMostController {
++ (UIViewController*) topMostController {
     UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
     
     while (topController.presentedViewController) {
