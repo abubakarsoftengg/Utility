@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CommonHelper : NSObject
 
 +(void)addObject:(id)object InArrayOnce:(NSMutableArray*)array;
+
++ (UIViewController*) topMostController ;
 
 @end
