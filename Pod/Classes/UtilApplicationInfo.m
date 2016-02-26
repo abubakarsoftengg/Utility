@@ -35,6 +35,13 @@
     return [paths objectAtIndex:0];
 }
 
+
++(BOOL)fileExistAtPath:(NSString*)filePath
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    return  [fileManager fileExistsAtPath:filePath];
+}
+
 + (NSString *) appVersion
 {
     return [[NSBundle mainBundle] objectForInfoDictionaryKey: @"CFBundleShortVersionString"];

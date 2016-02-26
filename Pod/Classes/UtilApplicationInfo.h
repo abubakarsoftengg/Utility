@@ -18,6 +18,8 @@
 
 +(NSString *)applicationLibraryDirectory;
 
++(BOOL)fileExistAtPath:(NSString*)filePath;
+
 + (NSString *) appVersion;
 
 + (NSString *) build;
